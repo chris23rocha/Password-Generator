@@ -47,6 +47,11 @@ if (includesymbols){
   possChars = possChars + symbols;
   console.log ("possChars = ", possChars);
 }
+
+for(let i = 0; i < passwordLength; i++){
+  password = password + possChars[ Math.floor(Math.random() * possChars.length)];
+}
+return password;
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
